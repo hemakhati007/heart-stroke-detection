@@ -40,7 +40,7 @@ def result():
     #same as we did in jupyter
     x=scaler.transform(x)
 
-    model_path=os.path.join('C:/Users/Admin/Desktop/git/heart-stroke-detection','model/dt.sav')
+    model_path=os.path.join('C:/Users/Admin/Desktop/git/heart-stroke-detection','model/rf.sav')
     dt=joblib.load(model_path)
 
     y_pred=dt.predict(x)
